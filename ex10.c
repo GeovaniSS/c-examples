@@ -14,7 +14,6 @@ int main ()
     revenda = valor_carro * 0.28; 
     valor_final = valor_carro + imposto + revenda;
 
-    system("pause");
     system("cls");
 
     printf("Nome do carro: %s\nValor final: %lf", nome_carro, valor_final);
