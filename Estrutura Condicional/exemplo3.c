@@ -33,26 +33,19 @@ int main() {
     printf("       RESULTADO       \n");
     printf("-----------------------\n");
     
-    switch (operador)
-    {
-        case '+': 
-            printf("%d + %d = %d", N1, N2, N1 + N2);
-            break;
-        
-        case '-':
+    if (operador == '+') {
+        printf("%d + %d = %d", N1, N2, N1 + N2);
+    }   
+        else if (operador == '-') {
             printf("%d - %d = %d", N1, N2, N1 - N2);
-            break;
-        
-        case '/':
-            printf("%d / %d = %d", N1, N2, N1 / N2);
-            break;
-        
-        case '*':
-            printf("%d * %d = %d", N1, N2, N1 * N2);
-            break;
-        
-        default: 
-            printf("Operador não encontrado!");
-            break;
-    }
+        }   
+            else if (operador == '/') {; 
+                printf("%d / %d = %d", N1, N2, N1 / N2);
+            }   
+                else if (operador == '*') {
+                    printf("%d * %d = %d", N1, N2, N1 * N2);
+                }   
+                    else {
+                        printf("Operador não encontrado!");
+                    }
 }

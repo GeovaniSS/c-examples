@@ -1,5 +1,4 @@
 #include <stdio.h> 
-#include <stdlib.h>
 #include <locale.h>
 
 int main() {   
@@ -9,12 +8,12 @@ int main() {
     char operador;
 
     printf("Escolha um número: ");
-    scanf("%d%*c", &N1);
+    scanf("%d%*c", &N1); //%*c limpa o buffer de entada
 
     printf("Escolha outro número: ");
     scanf("%d%*c", &N2);
 
-    system("cls");
+    system("cls"); //usa um comando do prompt do windows para limpar a tela
 
     printf("-----------------------\n");
     printf("       OPERADORES      \n");
@@ -26,26 +25,33 @@ int main() {
     printf("Escolha um operador: ");
     scanf("%c%*c", &operador);
 
-    system("pause");
+    system("pause"); 
     system("cls");
 
     printf("-----------------------\n");
     printf("       RESULTADO       \n");
     printf("-----------------------\n");
     
-    if (operador == '+') {
-        printf("%d + %d = %d", N1, N2, N1 + N2);
-    }   
-        else if (operador == '-') {
+    switch (operador)
+    {
+        case '+': 
+            printf("%d + %d = %d", N1, N2, N1 + N2);
+            break;
+        
+        case '-':
             printf("%d - %d = %d", N1, N2, N1 - N2);
-        }   
-            else if (operador == '/') {; 
-                printf("%d / %d = %d", N1, N2, N1 / N2);
-            }   
-                else if (operador == '*') {
-                    printf("%d * %d = %d", N1, N2, N1 * N2);
-                }   
-                    else {
-                        printf("Operador não encontrado!");
-                    }
+            break;
+        
+        case '/':
+            printf("%d / %d = %d", N1, N2, N1 / N2);
+            break;
+        
+        case '*':
+            printf("%d * %d = %d", N1, N2, N1 * N2);
+            break;
+        
+        default: 
+            printf("Operador não encontrado!");
+            break;
+    }
 }

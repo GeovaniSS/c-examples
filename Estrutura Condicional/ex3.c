@@ -3,7 +3,7 @@
 
 int main ()
 {
-    float N1,N2,N3, media; 
+    float N1, N2, N3, media; 
 
     printf("-----------------------\n");
     printf("         NOTAS         \n");

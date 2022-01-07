@@ -11,13 +11,13 @@ int main ()
     scanf("%d", &num);
 
     if (num > 25) {
-        printf("O número é maior que 25");
+        printf("O número %d é maior que 25", num);
     }
     else if (num < 25) {
-        printf("O número é menor que 25");
+        printf("O número %d é menor que 25", num);
     }
     else {
-        printf("O número é igual a 25");
+        printf("O número %d é igual a 25", num);
     }
 
 }
