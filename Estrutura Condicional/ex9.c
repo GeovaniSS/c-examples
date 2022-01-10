@@ -1,3 +1,4 @@
+//Exercício 09
 #include <stdio.h>
 #include <locale.h> 
 
@@ -22,10 +23,10 @@ int main()
     printf("---------------------\n");
 
     if (L1 == L2 && L2 == L3) {
-        printf("O triângulo é equilátero");
+        printf("O triângulo é equilátero"); 
     }
         else if (L1 != L2 && L2 != L3) {
-            printf("O trinângulo é escaleno");
+            printf("O triângulo é escaleno");
         }
             else {
                 printf("O triângulo é isósceles");

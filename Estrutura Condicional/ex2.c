@@ -1,3 +1,4 @@
+//Exercício 02
 #include <stdio.h> 
 #include <locale.h>
 

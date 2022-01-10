@@ -1,3 +1,4 @@
+//Exercício 07
 #include <stdio.h> 
 #include <locale.h> 
 
@@ -10,7 +11,7 @@ int main ()
     printf("--------------------\n");
     printf("       CÓDIGO       \n");
     printf("--------------------\n");
-    printf("Digite o código do produto: ");
+    printf("Digite o código do produto [1-10]: ");
     scanf("%d", &produto);
 
     system("pause");

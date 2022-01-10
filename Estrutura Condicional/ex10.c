@@ -1,10 +1,11 @@
+//Exercício 10
 #include <stdio.h>
 #include <locale.h> 
 
 int main ()
 {
-    int cap_tanque; 
-    float preco_tanque; 
+    int capacidadeTanque; 
+    float precoTanque; 
     char combustivel;
 
     printf("-----------------------------\n");
@@ -15,30 +16,31 @@ int main ()
     printf("Qual o tipo de combustível? ");
     scanf("%c", &combustivel);
     printf("Qual a capacidade do tanque em litros? ");
-    scanf("%d", &cap_tanque);
+    scanf("%d", &capacidadeTanque);
 
     system("pause");
     system("cls");
 
+    printf("-----------------------------\n");
+    printf("      POSTO DE GASOLINA      \n");
+    printf("-----------------------------\n");
+
     switch (combustivel) 
     {
         case 'G':
-            preco_tanque = cap_tanque * 5.00;
+            precoTanque = capacidadeTanque * 6.80;
+            printf("Valor para encher o tanque com gasolina: %f", precoTanque);
             break;
 
         case 'A':
-            preco_tanque = cap_tanque * 6.80;
+            precoTanque = capacidadeTanque * 5.00;
+            printf("Valor para encher o tanque com álcool: %f", precoTanque);
             break;
 
         default: 
             printf("Combustível não encontrado!");
             break;
     }
-
-    printf("-----------------------------\n");
-    printf("      POSTO DE GASOLINA      \n");
-    printf("-----------------------------\n");
-    printf("Valor para encher o tanque: %f", preco_tanque);
     
     return 0; 
 }

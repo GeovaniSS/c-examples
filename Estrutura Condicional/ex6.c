@@ -1,34 +1,38 @@
+//Exercício 06
 #include <stdio.h> 
 #include <locale.h> 
 
 int main () {
     setlocale(LC_ALL, "Portuguese");
 
-    int sal_ini, anos, bonus; 
+    int anosdeTrabalho;
+    float salarioInicial, bonusSalarial; 
 
     printf("------------------------\n");
     printf("       EMPRESA XKW      \n");
     printf("------------------------\n");
 
-    printf("Qual o seu salário?");
-    scanf("%d", &sal_ini);
+    printf("Informe o seu salário: ");
+    scanf("%f", &salarioInicial);
 
-    printf("Quantos anos de trabalho?");
-    scanf("%d", &anos);
-
-    if (anos >= 5) {
-        bonus = 0.2 * sal_ini + sal_ini; 
-    }
-
-    else {
-        bonus = 0.1 * sal_ini + sal_ini; 
-    }
+    printf("Quantos anos de trabalho? ");
+    scanf("%d", &anosdeTrabalho);
 
     system("pause");
     system("cls");
-
+    
     printf("------------------------\n");
     printf("      BÔNUS SALARIAL    \n");
     printf("------------------------\n");
-    printf("BÔNUS: %d", bonus);
+    printf("Salário inicial: %f\n", salarioInicial);
+
+    if (anosdeTrabalho >= 5) {
+        bonusSalarial = salarioInicial+ 0.2 * salarioInicial;  
+        printf("Bônus de 20 por cento: %f", bonusSalarial);
+    }
+
+    else {
+        bonusSalarial = salarioInicial+ 0.1 * salarioInicial; 
+        printf("Bônus de 10 por cento: %f", bonusSalarial);
+    }
 }
