@@ -1,3 +1,4 @@
+//Exercício 1
 #include <stdio.h>
 #include <locale.h>
 
@@ -11,4 +12,6 @@ int main ()
     {
         printf("%d\n", num);
     }
+
+    return 0;
 }
