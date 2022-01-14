@@ -8,13 +8,22 @@ int main ()
 
     int num, tabuada;  
 
-    printf("Escolha um número qualquer: ");
+    printf("----------------------\n");
+    printf("        TABUADA        \n");
+    printf("-----------------------\n");
+    printf("Escolha o número da tabuada: ");
     scanf("%d", &num);
+
+    system("pause");
+    system("cls");
+    
+    printf("----------------------\n");
+    printf("        TABUADA        \n");
+    printf("-----------------------\n");
 
     for (tabuada = 1; tabuada <= 10; tabuada++)
     {
-        printf("\n %d x %d = %d", num, tabuada, num*tabuada);
+        printf("%d x %d = %d\n", num, tabuada, num*tabuada);
     }
-
     return 0; 
 }

@@ -1,4 +1,4 @@
-//Exercício 6
+//Exercício 8
 #include <stdio.h>
 #include <locale.h>
 
@@ -18,6 +18,9 @@ int main ()
             qImpar = qImpar + 1; 
         }
     }
+
+    system("pause");
+    system("cls"); 
 
     printf("A quantidade de números ímpares digitados é igual a: %d", qImpar);
     

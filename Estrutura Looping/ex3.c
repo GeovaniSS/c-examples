@@ -9,7 +9,11 @@ int main ()
     int num, qPar=0, qImpar=0; 
 
     do {
-        printf("Digite um número qualquer: ");
+        printf("-----------------------------\n");
+        printf("       PARES E ÍMPARES       \n");
+        printf("-----------------------------\n");
+        printf("[0] - Finaliza o programa\n");
+        printf("Digite um número:  ");
         scanf("%d%*c", &num);
         
         if (num % 2 == 0)  
@@ -21,10 +25,15 @@ int main ()
                 qImpar = qImpar + 1; 
             }
 
+        system("cls"); //Limpa a tela
+        
     } while (num != 0);
     
+    printf("-----------------------------\n");
+    printf("       PARES E ÍMPARES       \n");
+    printf("-----------------------------\n");
     printf("Quantidade de pares digitados: %d\n", qPar-1);
     printf("Quantidade de ímpares digitados: %d", qImpar);
 
-
+    return 0; 
 }

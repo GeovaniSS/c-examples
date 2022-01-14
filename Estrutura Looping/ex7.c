@@ -19,7 +19,10 @@ int main ()
         }
     }
 
+    system("pause");
+    system("cls");
+
     printf("A soma dos números pares digitados é igual a: %d", somaPar);
-    
+
     return 0;
 }

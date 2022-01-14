@@ -4,6 +4,8 @@
 
 int main () 
 {
+    setlocale(LC_ALL, "Portuguese");
+
     int aluno, notaFinal, somadasNotas=0; 
     float mediaGeral; 
 
@@ -12,13 +14,14 @@ int main ()
         printf("-----------------\n");
         printf("    PORTUGUÊS    \n");
         printf("-----------------\n");
+        printf("Aluno %d°\n", aluno);
         printf("Nota Final: ");
         scanf("%d", &notaFinal);
         system("cls");
         somadasNotas = somadasNotas + notaFinal; 
     }
     
-    mediaGeral = somadasNotas/30;
+    mediaGeral = somadasNotas/30; 
 
     printf("-----------------\n");
     printf("    PORTUGUÊS    \n");
